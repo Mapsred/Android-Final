@@ -3,16 +3,9 @@ package activity.supinternet.com.tpfinal;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
 
-import java.util.List;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,18 +13,24 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Button button = (Button) findViewById(R.id.start);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity();
-            }
-        });
+        ButterKnife.bind(this);
     }
 
-    private void startActivity(){
+    @OnClick(R.id.story1)
+    public void clickStory1() {
+        startActivity(1);
+    }
+
+    @OnClick(R.id.story2)
+    public void clickStory2() {
+        startActivity(2);
+    }
+
+    public void startActivity(int story) {
         Intent intent = new Intent(this, GameActivity.class);
+        Bundle b = new Bundle();
+        b.putInt("story", story);
+        intent.putExtras(b);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }

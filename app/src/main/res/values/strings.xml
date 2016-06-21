@@ -2,4 +2,6 @@
     <string name="app_name">TP Final</string>
     <string name="background">Background</string>
     <string name="game">game</string>
+    <string name="story1">Guerrier ou Archer</string>
+    <string name="story2">Humain ou Robot</string>
 </resources>

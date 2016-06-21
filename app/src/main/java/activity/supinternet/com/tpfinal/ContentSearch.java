@@ -1,11 +1,11 @@
 package activity.supinternet.com.tpfinal;
 
-import java.util.List;
-
+import activity.supinternet.com.tpfinal.Story.Story;
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.Query;
 
 public interface ContentSearch {
     @GET("android")
-    Call<Content> search();
+    Call<Story> search(@Query("story") String keyword);
 }
