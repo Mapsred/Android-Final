@@ -1,0 +1,611 @@
+{
+  "switch_1": {
+    "classes": {
+      "class_1": {
+        "actions": {
+          "action_1": {
+            "text": "Vous arrivez dans la forêt. Vous fouillez un peu partout et finissez par trouver un vieux parchemin avec des indications : 3 branches, 2 fils. Que faites-vous ?",
+            "button_1_text": "Aller plus loin dans la forêt",
+            "button_2_text": "Aller au chemin",
+            "node_switch": 1,
+            "node_class": 1,
+            "node_action": 2
+          },
+          "action_2": {
+            "text": "Vous avez décidé de vous aventurer plus loin dans la forêt. Vous trouvez des branches d'arbre et quelques fils, comme indiqué sur le parchemin, vous arrivez donc à vous fabriquer un pauvre arc",
+            "button_1_text": "Mettre fin à l'aventure ...",
+            "button_2_text": "Aller sur le chemin",
+            "node_switch": 1,
+            "node_class": 1,
+            "node_action": 3
+          },
+          "action_3": {
+            "text": "Vous décidez que la vie d'aventurier n'est pas faite pour vous, vous décidez de redevenir fermier ! GAME OVER",
+            "button_1_text": "Recommencer en Guerrier",
+            "button_2_text": "Recommencer en Archer",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 0
+          },
+          "action_4": {
+            "text": "La gargouille vous saute dessus et vous met votre slip sur la tête et vous mourrez asphixié, vous êtes MORT. GAME OVER",
+            "button_1_text": "Recommencer en Guerrier",
+            "button_2_text": "Recommencer en Archer",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 0
+          },
+          "action_5": {
+            "text": "Vous attaquez la gargouille et réussissez un tir parfait digne d'un coup de chance, une flêche entre les deux yeux de la gargouille qui tombe raide morte. Vous continuez donc votre chemin et arrivez devant une grange, que faire ?",
+            "button_1_text": "La fouiller",
+            "button_2_text": "Continuer sans la fouiller",
+            "node_switch": 1,
+            "node_class": 9,
+            "node_action": 0
+          },
+          "action_9": {
+            "text": "Vous fouillez la grange et trouvez un vieux bout de papier avec marqué gauche, gauche, droite, gauche. Qu'est-ce donc  ?",
+            "button_1_text": "Se reposer dans la grange",
+            "button_2_text": "Continuer le chemin",
+            "node_switch": 1,
+            "node_class": 1,
+            "node_action": 11
+          },
+          "action_10": {
+            "text": "Vous avez attendu et pendant votre sommeil vous entendez la porte qui s'ouvre... Que faites vous ?",
+            "button_1_text": "Abandonner la vie d'aventurier",
+            "button_2_text": "Entrer dans le labyrinthe",
+            "node_switch": 1,
+            "node_class": 1,
+            "node_action": 14
+          },
+          "action_11": {
+            "text": "Vous vous êtes reposé dans la grange, au moment de repartir vous croisez le fermier qui vous confie une clé en disant que cela pourra vous aider dans votre aventure",
+            "button_1_text": "Partir sans la clé",
+            "button_2_text": "Allez vers le labyrinthe",
+            "node_switch": 1,
+            "node_class": 1,
+            "node_action": 12
+          },
+          "action_12": {
+            "text": "Vous arrivez devant un labyrinthe mais vous n'avez pas de clé pour y entrer ... Que faites vous ?",
+            "button_1_text": "Attendre",
+            "button_2_text": "Rebrousser chemin",
+            "node_switch": 1,
+            "node_class": 1,
+            "node_action": 10
+          },
+          "action_13": {
+            "text": "Vous avez attendu et pendant votre sommeil vous entendez la porte qui s'ouvre... Que faites vous ?",
+            "button_1_text": "Abandonner la vie d'aventurier",
+            "button_2_text": "Entrer dans le labyrinthe",
+            "node_switch": 1,
+            "node_class": 1,
+            "node_action": 14
+          },
+          "action_14": {
+            "text": "Vous décidez d'abandonner la vie d'aventurier... GAME OVER",
+            "button_1_text": "Recommencer en guerrier",
+            "button_2_text": "Recommencer en archer",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 0
+          },
+          "action_15": {
+            "text": "Vous choisissez gauche, une autre intersection s'offre à vous",
+            "button_1_text": "Gauche",
+            "button_2_text": "Droite",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 17
+          },
+          "action_16": {
+            "text": "Vous avancez vers la crevasse glissez sur une peau de banane et tombez comme un gland, vous MOURREZ. GAME OVER",
+            "button_1_text": "Recommencer en Guerrier",
+            "button_2_text": "Recommencer en Archer",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 0
+          },
+          "action_17": {
+            "text": "Vous arrivez ENCORE à une intersection ... Que faites-vous ?",
+            "button_1_text": "Gauche",
+            "button_2_text": "Droite",
+            "node_switch": 1,
+            "node_class": 1,
+            "node_action": 18
+          },
+          "action_18": {
+            "text": "Vous recontrez John Snow, il y a une couille quelque part ... Vous êtes mort ! GAME OVER",
+            "button_1_text": "Recommencer en Guerrier",
+            "button_2_text": "Recommencer en Archer",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 0
+          },
+          "action_19": {
+            "text": "Vous arrivez au bout du chemin, vous trouvez un oeuf de dragon. La mère dragon arrive, vous fuyez !",
+            "button_1_text": "Revenir en arrière",
+            "button_2_text": "Aller à la porte",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 20
+          }
+          "action_20": {
+            "text": "Vous recontrez John Snow, il y a une couille quelque part ... Vous êtes mort ! GAME OVER",
+            "button_1_text": "Recommencer en Guerrier",
+            "button_2_text": "Recommencer en Archer",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 0
+          },
+        }
+      },
+      "class_2": {
+        "actions": {
+          "action_0": {
+            "text": "Vous êtes un guerrier, Vous devez aller chercher votre épée pour combattre et vous défendre ! Le dernier l'ayant vu ne se souviens plus si c'était au cimetière ou dans une tour, à vous de décider le chemin à prendre.",
+            "button_1_text": "Aller au cimetière",
+            "button_2_text": "Aller à la tour",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 1
+          },
+          "action_1": {
+            "text": "Vous êtes arrivé à la tour, vous fouillez les environs et trouvez un escalier pour monter et un chemin pour continuer, que faites-vous ?",
+            "button_1_text": "Continuer le chemin",
+            "button_2_text": "Monter les escaliers",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 4
+          },
+          "action_2": {
+            "text": "Vous êtes arrivé à la tour, vous fouillez les environs et trouvez un escalier pour monter et un chemin pour continuer, que faites-vous ?",
+            "button_1_text": "Continuer le chemin",
+            "button_2_text": "Monter les escaliers",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 4
+          },
+          "action_3": {
+            "text": "Vous êtes arrivé à la tour, vous fouillez les environs et trouvez un escalier pour monter et un chemin pour continuer, que faites-vous ?",
+            "button_1_text": "Continuer le chemin",
+            "button_2_text": "Monter les escaliers",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 4
+          },
+          "action_4": {
+            "text": "Vous tombez sur une pièce avec plein de commodes, vous les fouillez toutes sans succès, au moment de repartir une lueur apparait et vous trouvez enfin votre épée ! Vous continuez donc sur le chemin trouvé précédemment",
+            "button_1_text": "Aller sur le chemin",
+            "button_2_text": "Fuir comme un lache !",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 5
+          },
+          "action_8": {
+            "text": "Vous tombez sur une pièce avec plein de commodes, vous les fouillez toutes sans succès, au moment de repartir une lueur apparait et vous trouvez enfin votre épée ! Vous continuez donc sur le chemin trouvé précédemment",
+            "button_1_text": "Aller sur le chemin",
+            "button_2_text": "Fuir comme un lache !",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 5
+          },
+          "action_5": {
+            "text": "Un monstre vous bloque la route; zut alors ...",
+            "button_1_text": "Le combattre !",
+            "button_2_text": "Fuir comme un lache !",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 6
+          },
+          "action_7": {
+            "text": "La gargouille vous saute dessus et vous met votre slip sur la tête et vous mourrez asphixié, vous êtes MORT. GAME OVER",
+            "button_1_text": "Recommencer en Guerrier",
+            "button_2_text": "Recommencer en Archer",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 0
+          },
+          "action_6": {
+            "text": "Vous arrivez à porter un coup final au monstre à l'aide de votre nouvelle épée tant bien que mal, vous décidez donc de continuer le chemin et arrivez devant une vieille grange, que faites vous ?",
+            "button_1_text": "La fouiller",
+            "button_2_text": "Continuer sans s'arrêter",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 9
+          },
+          "action_9": {
+            "text": "Vous fouillez la grange et trouvez un vieux bout de papier avec marqué gauche, gauche, droite, gauche. Qu'est-ce donc  ?",
+            "button_1_text": "Se reposer dans la grange",
+            "button_2_text": "Continuer le chemin",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 11
+          },
+          "action_10": {
+            "text": "Vous avez attendu et pendant votre sommeil vous entendez la porte qui s'ouvre... Que faites vous ?",
+            "button_1_text": "Abandonner la vie d'aventurier",
+            "button_2_text": "Entrer dans le labyrinthe",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 14
+          },
+          "action_11": {
+            "text": "Vous vous êtes reposé dans la grange, au moment de repartir vous croisez le fermier qui vous confie une clé en disant que cela pourra vous aider dans votre aventure",
+            "button_1_text": "Partir sans la clé",
+            "button_2_text": "Allez vers le labyrinthe",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 12
+          },
+          "action_12": {
+            "text": "Vous arrivez devant un labyrinthe mais vous n'avez pas de clé pour y entrer ... Que faites vous ?",
+            "button_1_text": "Attendre",
+            "button_2_text": "Rebrousser chemin",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 10
+          },
+          "action_13": {
+            "text": "Vous avez attendu et pendant votre sommeil vous entendez la porte qui s'ouvre... Que faites vous ?",
+            "button_1_text": "Abandonner la vie d'aventurier",
+            "button_2_text": "Entrer dans le labyrinthe",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 14
+          },
+          "action_14": {
+            "text": "Vous décidez d'abandonner la vie d'aventurier... GAME OVER",
+            "button_1_text": "Recommencer en guerrier",
+            "button_2_text": "Recommencer en archer",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 0
+          },
+          "action_15": {
+            "text": "Vous choisissez gauche, une autre intersection s'offre à vous",
+            "button_1_text": "Gauche",
+            "button_2_text": "Droite",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 17
+          },
+          "action_16": {
+            "text": "Vous avancez vers la crevasse glissez sur une peau de banane et tombez comme un gland, vous MOURREZ. GAME OVER",
+            "button_1_text": "Recommencer en Guerrier",
+            "button_2_text": "Recommencer en Archer",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 0
+          },
+          "action_17": {
+            "text": "Vous arrivez ENCORE à une intersection ... Que faites-vous ?",
+            "button_1_text": "Gauche",
+            "button_2_text": "Droite",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 18
+          },
+          "action_18": {
+            "text": "Vous recontrez John Snow, il y a une couille quelque part ... Vous êtes mort ! GAME OVER",
+            "button_1_text": "Recommencer en Guerrier",
+            "button_2_text": "Recommencer en Archer",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 0
+          },
+          "action_19": {
+            "text": "Vous arrivez au bout du chemin, vous trouvez un oeuf de dragon. La mère dragon arrive, vous fuyez !",
+            "button_1_text": "Revenir en arrière",
+            "button_2_text": "Aller à la porte",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 20
+          }
+          "action_20": {
+            "text": "Vous recontrez John Snow, il y a une couille quelque part ... Vous êtes mort ! GAME OVER",
+            "button_1_text": "Recommencer en Guerrier",
+            "button_2_text": "Recommencer en Archer",
+            "node_switch": 1,
+            "node_class": 2,
+            "node_action": 0
+          },
+        }
+      }
+    }
+  },
+  "switch_2": {
+    "classes": {
+      "class_1": {
+        "actions": {
+          "action_1": {
+            "text": "Vous êtes au cimetière, il semblerait que l'arc ne soit pas ici, vous décidez de rebrousser chemin.",
+            "button_1_text": "Aller à la forêt",
+            "button_2_text": "Aller au cimetière",
+            "node_switch": 2,
+            "node_class": 1,
+            "node_action": 1
+          },
+          "action_2": {
+            "text": "Vous êtes sur le chemin et rencontrez un monstre mais vous n'avez pas d'armes. Que voulez-vous faire ?",
+            "button_1_text": "Attaquer le monstre à main nue",
+            "button_2_text": "Fuir le monstre",
+            "node_switch": 2,
+            "node_class": 1,
+            "node_action": 4
+          },
+          "action_3": {
+            "text": "Vous êtes sur le chemin et vous rencontrez un monstre. Que voulez-vous faire ?",
+            "button_1_text": "Attaquer le monstre",
+            "button_2_text": "Fuir le monstre",
+            "node_switch": 2,
+            "node_class": 1,
+            "node_action": 5
+          },
+          "action_4": {
+            "text": "Vous êtes sur le chemin et rencontrez un monstre mais vous n'avez pas d'armes. Que voulez-vous faire ?",
+            "button_1_text": "Attaquer le monstre à main nue",
+            "button_2_text": "Fuir le monstre",
+            "node_switch": 2,
+            "node_class": 1,
+            "node_action": 2
+          },
+          "action_5": {
+            "text": "Vous fuyez comme un lâche que vous êtes, vous abandonnez la vie d'aventurier et redevenez un simple fermier. GAME OVER",
+            "button_1_text": "Recommencer en Guerrier",
+            "button_2_text": "Recommencer en Archer",
+            "node_switch": 2,
+            "node_class": 2,
+            "node_action": 0
+          },
+          "action_9": {
+            "text": "Vous avez décidé de ne pas fouiller la grange, vous arrivez devant un labyrinthe mais vous n'avez pas de clé pour y entrer ... Que faites vous ?",
+            "button_1_text": "Attendre",
+            "button_2_text": "Rebrousser chemin",
+            "node_switch": 2,
+            "node_class": 1,
+            "node_action": 10
+          },
+          "action_10": {
+            "text": "Vous avez décidé d'emprunter le chemin, bonne chance... En chemin vous trouvez une vieille grange.",
+            "button_1_text": "La fouiller",
+            "button_2_text": "Continuer sans s'arrêter",
+            "node_switch": 2,
+            "node_class": 1,
+            "node_action": 9
+          },
+          "action_11": {
+            "text": "Vous arrivez devant un labyrinthe mais vous n'avez pas de clé pour y entrer ... Que faites vous ?",
+            "button_1_text": "Attendre",
+            "button_2_text": "Rebrousser chemin",
+            "node_switch": 2,
+            "node_class": 1,
+            "node_action": 10
+          },
+          "action_12": {
+            "text": "Vous êtes arrivé devant le labyrinthe. Que faire ?",
+            "button_1_text": "Attendre",
+            "button_2_text": "Utiliser la clé donnée par le fermier",
+            "node_switch": 2,
+            "node_class": 1,
+            "node_action": 13
+          },
+          "action_13": {
+            "text": "Vous entrez dans le labyrinthe, deux chemins sont disponibles",
+            "button_1_text": "Gauche",
+            "button_2_text": "Droite",
+            "node_switch": 2,
+            "node_class": 1,
+            "node_action": 15
+          },
+          "action_14": {
+            "text": "Vous entrez dans le labyrinthe, deux chemins sont disponibles",
+            "button_1_text": "Gauche",
+            "button_2_text": "Droite",
+            "node_switch": 2,
+            "node_class": 1,
+            "node_action": 15
+          },
+          "action_15": {
+            "text": "Vous avez choisi la droite, c'est une impasse, il y a une crevasse",
+            "button_1_text": "Avancer vers la crevasse",
+            "button_2_text": "Retourner en arrière",
+            "node_switch": 2,
+            "node_class": 1,
+            "node_action": 16
+          },
+          "action_16": {
+            "text": "Vous entrez dans le labyrinthe, deux chemins sont disponibles",
+            "button_1_text": "Gauche",
+            "button_2_text": "Droite",
+            "node_switch": 2,
+            "node_class": 1,
+            "node_action": 15
+          },
+          "action_17": {
+            "text": "Vous avez décidé de tourner à droite. Une pierre glisse du mur et vous tombe dessus. à votre reveil vous trouvez votre dignité oubliée, vous êtes sûrement mort ... Bienvenue au paradis. GAME OVER",
+            "button_1_text": "Recommencer en Guerrier",
+            "button_2_text": "Recommencer en Archer",
+            "node_switch": 2,
+            "node_class": 1,
+            "node_action": 0
+          },
+          "action_18": {
+            "text": "Vous avez choisi la droite. Vous arrivez à une inième intersection. Que choisisez-vous ?",
+            "button_1_text": "Gauche",
+            "button_2_text": "Droite",
+            "node_switch": 2,
+            "node_class": 1,
+            "node_action": 19
+          },
+          "action_20": {
+            "text": "Vous fuyez vers la porte et perdez la clé pendant la fuite. La porte est bloquée, la mère dragon arrive, vous êtes conviés à un barbecue surprise. Bonne chance... GAME OVER",
+            "button_1_text": "Recommencer en Guerrier",
+            "button_2_text": "Recommencer en Archer",
+            "node_switch": 2,
+            "node_class": 1,
+            "node_action": 0
+          }
+        }
+      },
+      "class_2": {
+        "actions": {
+          "action_0": {
+            "text": "Vous êtes un archer, Vous devez aller chercher votre arc pour combattre et vous défendre ! Le dernier l'ayant vu ne se souviens plus si c'était au cimetière ou dans une forêt, à vous de décider le chemin à prendre.",
+            "button_1_text": "Aller dans la forêt",
+            "button_2_text": "Aller au cimetière",
+            "node_switch": 2,
+            "node_class": 1,
+            "node_action": 1
+          },
+          "action_1": {
+            "text": "Vous êtes au cimetière, il semblerait que l'épée ne soit pas ici, vous décidez de rebrousser chemin.",
+            "button_1_text": "Aller à la tour",
+            "button_2_text": "Aller au cimetière",
+            "node_switch": 2,
+            "node_class": 2,
+            "node_action": 3
+          },
+          "action_3": {
+            "text": "Vous êtes toujours au cimetière, et l'épée n'y est toujours pas ! Vous rebroussez encore chemin.",
+            "button_1_text": "Aller à la tour",
+            "button_2_text": "Aller au cimetière",
+            "node_switch": 2,
+            "node_class": 2,
+            "node_action": 3
+          },
+          "action_4": {
+            "text": "Vous avez décidé d'emprunter le chemin sans armes ni équipement, bonne chance... En chemin vous rencontrez une gargouille.",
+            "button_1_text": "La combattre, sans armes",
+            "button_2_text": "La fuir",
+            "node_switch": 2,
+            "node_class": 2,
+            "node_action": 7
+          },
+          "action_5": {
+            "text": "Vous avez décidé d'emprunter le chemin, bonne chance... En chemin vous trouvez une vieille grange.",
+            "button_1_text": "La fouiller",
+            "button_2_text": "Continuer sans s'arrêter",
+            "node_switch": 2,
+            "node_class": 2,
+            "node_action": 9
+          },
+          "action_6": {
+            "text": "Vous fuyez comme un lâche que vous êtes, vous abandonnez la vie d'aventurier et redevenez un simple fermier. GAME OVER",
+            "button_1_text": "Recommencer en Guerrier",
+            "button_2_text": "Recommencer en Archer",
+            "node_switch": 2,
+            "node_class": 2,
+            "node_action": 0
+          },
+          "action_7": {
+            "text": "Vous êtes de retour à l'intersection, que faites vous ?",
+            "button_1_text": "Monter les escaliers",
+            "button_2_text": "Continuer le chemin",
+            "node_switch": 2,
+            "node_class": 2,
+            "node_action": 8
+          },
+          "action_8": {
+            "text": "Vous avez décidé d'emprunter le chemin sans armes ni équipement, bonne chance... En chemin vous rencontrez une gargouille.",
+            "button_1_text": "La combattre, sans armes",
+            "button_2_text": "La fuir",
+            "node_switch": 2,
+            "node_class": 2,
+            "node_action": 7
+          },
+          "action_9": {
+            "text": "Vous avez décidé de ne pas fouiller la grange, vous arrivez devant un labyrinthe mais vous n'avez pas de clé pour y entrer ... Que faites vous ?",
+            "button_1_text": "Attendre",
+            "button_2_text": "Rebrousser chemin",
+            "node_switch": 2,
+            "node_class": 2,
+            "node_action": 10
+          },
+          "action_10": {
+            "text": "Vous avez décidé d'emprunter le chemin, bonne chance... En chemin vous trouvez une vieille grange.",
+            "button_1_text": "La fouiller",
+            "button_2_text": "Continuer sans s'arrêter",
+            "node_switch": 2,
+            "node_class": 2,
+            "node_action": 9
+          },
+          "action_11": {
+            "text": "Vous arrivez devant un labyrinthe mais vous n'avez pas de clé pour y entrer ... Que faites vous ?",
+            "button_1_text": "Attendre",
+            "button_2_text": "Rebrousser chemin",
+            "node_switch": 2,
+            "node_class": 2,
+            "node_action": 10
+          },
+          "action_12": {
+            "text": "Vous êtes arrivé devant le labyrinthe. Que faire ?",
+            "button_1_text": "Attendre",
+            "button_2_text": "Utiliser la clé donnée par le fermier",
+            "node_switch": 2,
+            "node_class": 2,
+            "node_action": 13
+          },
+          "action_13": {
+            "text": "Vous entrez dans le labyrinthe, deux chemins sont disponibles",
+            "button_1_text": "Gauche",
+            "button_2_text": "Droite",
+            "node_switch": 2,
+            "node_class": 2,
+            "node_action": 15
+          },
+          "action_14": {
+            "text": "Vous entrez dans le labyrinthe, deux chemins sont disponibles",
+            "button_1_text": "Gauche",
+            "button_2_text": "Droite",
+            "node_switch": 2,
+            "node_class": 2,
+            "node_action": 15
+          },
+          "action_15": {
+            "text": "Vous avez choisi la droite, c'est une impasse, il y a une crevasse",
+            "button_1_text": "Avancer vers la crevasse",
+            "button_2_text": "Retourner en arrière",
+            "node_switch": 2,
+            "node_class": 2,
+            "node_action": 16
+          },
+          "action_16": {
+            "text": "Vous entrez dans le labyrinthe, deux chemins sont disponibles",
+            "button_1_text": "Gauche",
+            "button_2_text": "Droite",
+            "node_switch": 2,
+            "node_class": 2,
+            "node_action": 15
+          },
+          "action_17": {
+            "text": "Vous avez décidé de tourner à droite. Une pierre glisse du mur et vous tombe dessus. à votre reveil vous trouvez votre dignité oubliée, vous êtes sûrement mort ... Bienvenue au paradis. GAME OVER",
+            "button_1_text": "Recommencer en Guerrier",
+            "button_2_text": "Recommencer en Archer",
+            "node_switch": 2,
+            "node_class": 2,
+            "node_action": 0
+          },
+          "action_18": {
+            "text": "Vous avez choisi la droite. Vous arrivez à une inième intersection. Que choisisez-vous ?",
+            "button_1_text": "Gauche",
+            "button_2_text": "Droite",
+            "node_switch": 2,
+            "node_class": 2,
+            "node_action": 19
+          },
+          "action_20": {
+            "text": "Vous fuyez vers la porte et perdez la clé pendant la fuite. La porte est bloquée, la mère dragon arrive, vous êtes conviés à un barbecue surprise. Bonne chance... GAME OVER",
+            "button_1_text": "Recommencer en Guerrier",
+            "button_2_text": "Recommencer en Archer",
+            "node_switch": 2,
+            "node_class": 2,
+            "node_action": 0
+          }
+        }
+      }
+    }
+  }
+}
+
