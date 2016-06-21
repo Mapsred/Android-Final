@@ -42,6 +42,7 @@ public class GameActivity extends AppCompatActivity {
     private int node_switch;
     private int node_class;
     private int node_action = 0;
+    final static boolean log = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +52,6 @@ public class GameActivity extends AppCompatActivity {
 
         Bundle b = getIntent().getExtras();
 
-        Log.d("STORY", b.toString());
         story = b.getInt("story");
 
         initContent();
@@ -62,16 +62,29 @@ public class GameActivity extends AppCompatActivity {
         if (node_switch == 0 || node_class == 0) {
             verifyOneAction();
         }
+
+        buttonsAction();
+    }
+
+    @OnClick(R.id.button2)
+    public void archerAction() {
+        if (node_switch == 0 || node_class == 0) {
+            verifyTwoAction();
+        }
+        buttonsAction();
+    }
+
+    private Action buttonsAction() {
         Switch switch_obj = content.getSwitch(node_switch);
         switch_obj.getClasses().ClassesAction(); //Implement the list
         Classe class_obj = switch_obj.getClasses().getClasse(node_class);
         class_obj.getActions().ActionsAction(); //Implement the list
         Action action = class_obj.getActions().getAction(node_action);
-    }
+        setLocals(action);
+        logLocals();
+        setTexts(action);
 
-    @OnClick(R.id.button2)
-    public void archerAction() {
-
+        return action;
     }
 
     private void verifyOneAction() {
@@ -83,6 +96,34 @@ public class GameActivity extends AppCompatActivity {
         }
     }
 
+    private void verifyTwoAction() {
+        if (node_switch == 0) {
+            node_switch = 2;
+        }
+        if (node_class == 0) {
+            node_class = 2;
+        }
+    }
+
+    private void setLocals(Action action) {
+        node_switch = action.getNodeSwitch();
+        node_class = action.getNodeClass();
+        node_action = action.getNodeAction();
+    }
+
+    private void setTexts(Action action) {
+        texte.setText(action.getText());
+        button1.setText(action.getButton1Text());
+        button2.setText(action.getButton2Text());
+    }
+
+    private void logLocals() {
+        if (log) {
+            Log.d("NODE_SWITCH", String.valueOf(node_switch));
+            Log.d("NODE_CLASS", String.valueOf(node_class));
+            Log.d("NODE_ACTION", String.valueOf(node_action));
+        }
+    }
 
     public void initContent() {
         ContentSearchService.search(String.valueOf(story), new Callback<Story>() {
