@@ -32,13 +32,15 @@ public class GameActivity extends AppCompatActivity {
     @BindView(R.id.button2)
     Button button2;
 
+    @BindView(R.id.button3)
+    Button button3;
+
     Story content;
 
     private int story = 0;
-    private int node_switch;
-    private int node_class;
+    private int node_class = 2;
     private int node_action = 0;
-    final static boolean log = false;
+    final static boolean log = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,22 +57,24 @@ public class GameActivity extends AppCompatActivity {
 
     @OnClick(R.id.button)
     public void guerrierAction() {
-        if (node_switch == 0 || node_class == 0) {
-            verifyOneAction();
-        }
-
-        buttonsAction();
+        buttonsAction(1);
     }
 
     @OnClick(R.id.button2)
     public void archerAction() {
-        if (node_switch == 0 || node_class == 0) {
-            verifyTwoAction();
-        }
-        buttonsAction();
+        buttonsAction(2);
     }
 
-    private Action buttonsAction() {
+    @OnClick(R.id.button3)
+    public void restartAction() {
+        button1.setText(story == 1 ? R.string.restart_guerrier : R.string.restart_humain);
+        button2.setText(story == 1 ? R.string.restart_archer : R.string.restart_robot);
+        texte.setText(R.string.restart_message);
+        node_class = 2;
+        node_action = 0;
+    }
+
+    private Action buttonsAction(int node_switch) {
         Switch switch_obj = content.getSwitch(node_switch);
         switch_obj.getClasses().ClassesAction(); //Implement the list
         Classe class_obj = switch_obj.getClasses().getClasse(node_class);
@@ -83,26 +87,7 @@ public class GameActivity extends AppCompatActivity {
         return action;
     }
 
-    private void verifyOneAction() {
-        if (node_switch == 0) {
-            node_switch = 1;
-        }
-        if (node_class == 0) {
-            node_class = 2;
-        }
-    }
-
-    private void verifyTwoAction() {
-        if (node_switch == 0) {
-            node_switch = 2;
-        }
-        if (node_class == 0) {
-            node_class = 2;
-        }
-    }
-
     private void setLocals(Action action) {
-        node_switch = action.getNodeSwitch();
         node_class = action.getNodeClass();
         node_action = action.getNodeAction();
     }
@@ -115,7 +100,6 @@ public class GameActivity extends AppCompatActivity {
 
     private void logLocals() {
         if (log) {
-            Log.d("NODE_SWITCH", String.valueOf(node_switch));
             Log.d("NODE_CLASS", String.valueOf(node_class));
             Log.d("NODE_ACTION", String.valueOf(node_action));
         }

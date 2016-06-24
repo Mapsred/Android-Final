@@ -2,6 +2,13 @@
     <string name="app_name">TP Final</string>
     <string name="background">Background</string>
     <string name="game">game</string>
-    <string name="story1">Guerrier ou Archer</string>
-    <string name="story2">Humain ou Robot</string>
+    <string name="welcome">Bienvenue sur Play your life, vous pouvez choisir une des histoires ci dessous</string>
+    <string name="story1">Histoire Médiévale</string>
+    <string name="story2">Histoire Futuriste</string>
+    <string name="restart">Redémarrer</string>
+    <string name="restart_message">Vous avez choisi de recommencer</string>
+    <string name="restart_guerrier">Recommencer en Guerrier</string>
+    <string name="restart_archer">Recommencer en Guerrier</string>
+    <string name="restart_humain">Recommencer en Humain</string>
+    <string name="restart_robot">Recommencer en Robot</string>
 </resources>
